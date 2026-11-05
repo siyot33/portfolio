@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explicación de mi entorno de trabajo y de las herramientas que utilizo para desarrollar mi portfolio.">
+    <title>Mi entorno de trabajo</title>
+</head>
+<body>
+    <header>
+        <h1>Mi entorno de trabajo</h1>
+        <p>Cómo funciona la web y qué herramientas utilizo para crear mi portfolio.</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="viaje-url">
+            <h2 id="viaje-url">¿Qué ocurre cuando escribo una URL?</h2>
+            <p>
+                Cuando escribo una dirección web en el navegador y pulso Intro,
+                comienza un proceso para encontrar el servidor donde está alojada
+                la página y solicitar sus archivos.
+            </p>
+            <ol>
+                <li>El navegador interpreta la URL y localiza el dominio. Para encontrar su dirección IP consulta el sistema DNS.</li>
+                <li>Con la dirección IP, el navegador establece una conexión con el servidor. En una web segura se utiliza HTTPS.</li>
+                <li>El navegador envía una petición HTTP al servidor para pedir el recurso, normalmente una página.</li>
+                <li>El servidor recibe la petición y devuelve una respuesta HTTP con el contenido solicitado, por ejemplo HTML, CSS, JavaScript e imágenes.</li>
+                <li>El navegador interpreta esos archivos, construye la página y muestra el resultado en la pantalla.</li>
+            </ol>
+            <p>
+                Este intercambio es un ejemplo del modelo cliente-servidor:
+                el navegador actúa como cliente porque solicita información,
+                y el servidor responde enviando los recursos de la página.
+            </p>
+        </section>
+
+        <section aria-labelledby="herramientas">
+            <h2 id="herramientas">Herramientas que utilizo</h2>
+            <ul>
+                <li><strong>Visual Studio Code (VS Code):</strong> es el editor que utilizo para escribir y organizar el código HTML, CSS y otros archivos del proyecto.</li>
+                <li><strong>Extensiones:</strong> añaden funciones al editor. Por ejemplo, un corrector ortográfico ayuda a revisar los textos y las herramientas de formato ayudan a mantener el código ordenado.</li>
+                <li><strong>Live Server:</strong> permite abrir la página en el navegador mediante un servidor local y actualizarla al guardar los cambios.</li>
+                <li><strong>Git:</strong> es el sistema de control de versiones. Sirve para guardar puntos del historial del proyecto, consultar cambios y volver a una versión anterior.</li>
+                <li><strong>GitHub:</strong> es una plataforma donde puedo alojar el repositorio Git, compartir el código y publicarlo para que otras personas puedan verlo.</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="carpetas">
+            <h2 id="carpetas">Estructura de carpetas del portfolio</h2>
+            <p>He organizado los archivos del proyecto de esta manera:</p>
+            <pre>
+portfolio/
+├── index.html
+├── entorno.html
+├── README.md
+└── img/
+    └── .gitkeep
+            </pre>
+            <p>
+                Los dos archivos HTML contienen las páginas del portfolio.
+                El archivo README.md explica de qué trata el proyecto y qué
+                tecnologías utiliza. La carpeta img está reservada para las
+                imágenes que pueda añadir más adelante. El archivo .gitkeep
+                permite que Git conserve la carpeta aunque todavía esté vacía.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Portfolio personal · 2026</p>
+    </footer>
+</body>
+</html>
